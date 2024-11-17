@@ -1,6 +1,7 @@
 import numpy as np
 import pickle 
 import streamlit as st
+import webbrowser
 
 # Load the machine learning model
 loaded_model = pickle.load(open('lc.pkl', 'rb'))
@@ -154,6 +155,11 @@ if submit_button:
                 st.markdown("<div class='result-message affected-message'>You might be affected by LUNG CANCER</div>", unsafe_allow_html=True)
                 st.markdown("<div class='footer'>It's possible for 10-20% of lung cancer patients to have both heart disease and brain disease</div>", unsafe_allow_html=True)
                 st.markdown("<div class='footer'>get checked and use our models to predict your condition</div>", unsafe_allow_html=True)
+                if st.button('Go to Streamlit'):
+                    webbrowser.open('https://braintumorpredictionssn.streamlit.app/')
+                    webbrowser.open('https://heartdiseasessn.streamlit.app/')
+                    
+
 
 # Footer and attribution
 #st.markdown("<div class='footer'>This app is for educational purposes.</div>", unsafe_allow_html=True)
