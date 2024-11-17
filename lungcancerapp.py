@@ -59,7 +59,7 @@ st.markdown(
 
 # Input fields for user data
 with st.container():
-    st.markdown("<div class='header'>User Information</div>", unsafe_allow_html=True)
+    st.markdown("<div class='header'></div>", unsafe_allow_html=True)
 with st.form("user_input_form"):
     col1, col2 = st.columns(2)  # Divide the container into two columns
     with col1:
@@ -154,5 +154,5 @@ if submit_button:
                 st.markdown("<div class='result-message affected-message'>You might be affected by LUNG CANCER</div>", unsafe_allow_html=True)
 
 # Footer and attribution
-st.markdown("<div class='footer'>This app is for educational purposes.</div>", unsafe_allow_html=True)
-st.markdown("<div class='footer'>Founder: </div>", unsafe_allow_html=True)
+#st.markdown("<div class='footer'>This app is for educational purposes.</div>", unsafe_allow_html=True)
+#st.markdown("<div class='footer'>Founder: </div>", unsafe_allow_html=True)
