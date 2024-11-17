@@ -155,10 +155,12 @@ if submit_button:
                 st.markdown("<div class='result-message affected-message'>You might be affected by LUNG CANCER</div>", unsafe_allow_html=True)
                 st.markdown("<div class='footer'>It's possible for 10-20% of lung cancer patients to have both heart disease and brain disease</div>", unsafe_allow_html=True)
                 st.markdown("<div class='footer'>get checked and use our models to predict your condition</div>", unsafe_allow_html=True)
-                if st.button('to check brain tumour '):
+                if st.button('to check Brain Tumour '):
                     webbrowser.open('https://braintumorpredictionssn.streamlit.app/')
-                if st.button('to check heart disease'):
+                    st.markdown('<a href="https://braintumorpredictionssn.streamlit.app/" target="_blank">Brain tumour</a>', unsafe_allow_html=True)
+                if st.button('to check Heart Disease'):
                     webbrowser.open('https://heartdiseasessn.streamlit.app/')
+                    st.markdown('<a href="https://heartdiseasessn.streamlit.app/" target="_blank">Heart Disease </a>', unsafe_allow_html=True)
                     
 
 
