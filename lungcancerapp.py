@@ -152,7 +152,11 @@ if submit_button:
                 st.markdown("<div class='result-message safe-message'>You are SAFE!</div>", unsafe_allow_html=True)
             else:
                 st.markdown("<div class='result-message affected-message'>You might be affected by LUNG CANCER</div>", unsafe_allow_html=True)
+                st.markdown("<div class='footer'>It's possible for 10-20% of lung cancer patients to have both heart disease and brain disease</div>", unsafe_allow_html=True)
+                st.markdown("<div class='footer'>get checked and use our models to predict your condition</div>", unsafe_allow_html=True)
 
 # Footer and attribution
 #st.markdown("<div class='footer'>This app is for educational purposes.</div>", unsafe_allow_html=True)
 #st.markdown("<div class='footer'>Founder: </div>", unsafe_allow_html=True)
+
+#st.markdown("<div class='footer'></div>", unsafe_allow_html=True)
