@@ -155,8 +155,9 @@ if submit_button:
                 st.markdown("<div class='result-message affected-message'>You might be affected by LUNG CANCER</div>", unsafe_allow_html=True)
                 st.markdown("<div class='footer'>It's possible for 10-20% of lung cancer patients to have both heart disease and brain disease</div>", unsafe_allow_html=True)
                 st.markdown("<div class='footer'>get checked and use our models to predict your condition</div>", unsafe_allow_html=True)
-                if st.button('Go to Streamlit'):
+                if st.button('to check brain tumour '):
                     webbrowser.open('https://braintumorpredictionssn.streamlit.app/')
+                if st.button('to check heart disease'):
                     webbrowser.open('https://heartdiseasessn.streamlit.app/')
                     
 
